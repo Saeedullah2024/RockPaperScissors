@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Sciossors</title>
+    <script src="RockPaperScissors.js"></script>
+    <link rel="Stylesheet" href="rockpaperscissors.css">
+</head>
+<body class="body">
+   <p class="headingRPS">Rock Paper Scissors Game</p>
+   <button class="rockbutton" onclick="OurMove('rock')"><img src="picture/rock-emoji.png" class="image-icon"></button>
+   <button class="paperbutton" onclick="OurMove('paper')"><img src="picture/paper-emoji.png" class="image-icon"></button>
+   <button class="scissorsbutton" onclick="OurMove('scissors')"><img src="picture/scissors-emoji.png" class="image-icon"></button>
+   <p class="Js-result"></p>
+   <p class="Js-Chose"></p>
+   <p class="Js-score"></p>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+
+   <button class="btn" onclick="
+   Score.won = 0;
+   Score.Lose = 0;
+   Score.Tie = 0;
+   localStorage.removeItem('score');
+   document.querySelector('.Js-score')
+    .innerHTML = `Wins: ${Score.won} Lose: ${Score.Lose} Tie: ${Score.Tie}`;
+   ">Reset Score</button>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <hr>
+
+   <p>For Calculating GST and Discount Click the link below:</p><a  style="color: white;" href="GST.html">Here</a>
+   
+
+</body>
+</html>
